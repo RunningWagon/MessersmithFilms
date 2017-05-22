@@ -1,0 +1,36 @@
+.vcenter {
+    vertical-align: middle;
+    float: none;
+}
+
+body {
+    width: 100%;
+}
+
+.row-table {
+    width: 120%;
+    table-layout: fixed;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.table-none {
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    display: none;
+}
+
+.table-none img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .row-table {
+        display: none;
+    }
+
+    .table-none {
+        display: block;
+    }
+}
