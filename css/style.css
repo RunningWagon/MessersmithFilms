@@ -4,7 +4,7 @@ body {
 
 /* Split row table */
 .row-table {
-    width: 120%;
+    width: 100%;
     table-layout: fixed;
     font-size: 1.2em;
     line-height: 1.6em;
@@ -35,4 +35,15 @@ body {
 /* Portfolio Section */
 .popup-gallery img {
     width: 100% !important;
+}
+
+/* Footer */
+#footer {
+    background-color: #bc1616;
+    color: #111;
+}
+
+#footer a {
+    font-size: 28px;
+    color: #111;
 }
