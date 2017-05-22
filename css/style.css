@@ -83,7 +83,7 @@ header {
     height: 100%;
 }
 
-div.row-overlay {
+header div.row-overlay {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -92,7 +92,7 @@ div.row-overlay {
     left: 0;
 }
 
-.overlay-diagdark {
+header .overlay-diagdark {
     background-image: url(../img/texture.png);
     z-index: -1;
 }
@@ -110,30 +110,27 @@ div.row-overlay {
 
 
 /* Contact */ 
-.contact-outer {
-    background-image: url(../img/city.jpg);
+#contact {
+    background-image: url('../img/guitar.jpg');
     background-attachment: fixed;
     background-position: center; 
     background-size: cover;
-    z-index: -10;
+    z-index: 10;
 }
 
 .contact-inner {
     color: white;
+    z-index: -1;
+}
+
+div.contact-overlay {
+    position: inherit;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/texture.png);
     z-index: 10;
 }
 
-.contact-inner > div.row-overlay {
-    position: fixed;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+.overlay-contact {
 }
-
-.contact-inner .overlay-diagdark {
-    background-image: url(../img/texture.png);
-    z-index: 0;
-}
-
