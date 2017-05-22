@@ -107,3 +107,31 @@ div.row-overlay {
 
 }
 
+/* Contact */ 
+
+.contact-outer {
+    background-image: url(../img/city.jpg);
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+    z-index: -10;
+}
+
+.contact-inner {
+    color: white;
+    z-index: 10;
+}
+
+.contact-inner div.row-overlay {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contact-inner .overlay-diagdark {
+    background-image: url(../img/texture.png);
+    z-index: 0;
+}
