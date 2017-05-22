@@ -25,6 +25,10 @@ body {
     width:70%;
 }
 
+.portrait-image {
+    width: 90%;
+}
+
 @media only screen and (max-width: 1024px) {
     .row-table {
         display: none;
@@ -33,6 +37,10 @@ body {
     .table-none {
         display: inline;
     }
+}
+
+.about2-table img {
+    width: 70%;
 }
 
 
