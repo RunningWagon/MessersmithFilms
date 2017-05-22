@@ -10,6 +10,10 @@ body {
     line-height: 1.6em;
 }
 
+.row-table td {
+    padding: 20px;
+}
+
 .table-none {
     width: 100%;
     font-size: 1.2em;
@@ -18,7 +22,7 @@ body {
 }
 
 .table-none img {
-    width: 100%;
+    width:70%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -27,7 +31,7 @@ body {
     }
 
     .table-none {
-        display: block;
+        display: inline;
     }
 }
 
