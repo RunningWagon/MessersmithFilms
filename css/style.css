@@ -1,12 +1,8 @@
-.vcenter {
-    vertical-align: middle;
-    float: none;
-}
-
 body {
     width: 100%;
 }
 
+/* Split row table */
 .row-table {
     width: 120%;
     table-layout: fixed;
@@ -33,4 +29,10 @@ body {
     .table-none {
         display: block;
     }
+}
+
+
+/* Portfolio Section */
+.popup-gallery img {
+    width: 100% !important;
 }
