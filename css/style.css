@@ -125,6 +125,10 @@ div.row-overlay {
 
 /* Portfolio */
 
+.portfolio-box img {
+    height: 100%;
+}
+
 /* About2 */
 #about2 {
     z-index: -10;
