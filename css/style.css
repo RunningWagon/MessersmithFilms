@@ -1,5 +1,38 @@
-body {
+body, html{
     width: 100%;
+    height: 100%;
+}
+
+/* Header */
+header {
+    z-index: 0;
+}
+.header-content p{
+    color: white !important;
+    font-weight: bold;
+}
+
+.header-content-inner {
+    z-index: 100;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: 100%; 
+    height: 100%;
+}
+
+div.row-overlay {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 /* Split row table */
@@ -39,10 +72,10 @@ body {
     }
 }
 
-.about2-table img {
-    width: 70%;
+.overlay-diagdark {
+    background-image: url(../img/texture.png);
+    z-index: -1;
 }
-
 
 /* Portfolio Section */
 .popup-gallery img {
@@ -60,41 +93,31 @@ body {
     color: #111;
 }
 
-/* Header */
-header {
-    z-index: 0;
-}
-.header-content p{
-    color: white !important;
-    font-weight: bold;
-}
 
-.header-content-inner {
-    z-index: 100;
-}
-
-.video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: 100%; 
-    height: 100%;
-}
-
-div.row-overlay {
-    position: absolute;
-    z-index: -1;
+/* Portfolio */
+#header {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    position: relative;
+    overflow: hidden;
+}
+#header video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* The following will size the video to fit the full container. Not necessary, just nice.*/
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: -100;
 }
 
-.overlay-diagdark {
-    background-image: url(../img/texture.png);
-    z-index: -1;
+#header div.afterVideo {
+    position: relative;
+    z-index: 1;
 }
 
 /* About2 */
@@ -106,6 +129,11 @@ div.row-overlay {
     background-size: cover;
 
 }
+
+.about2-table img {
+    width: 70%;
+}
+
 
 
 
