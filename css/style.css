@@ -91,7 +91,7 @@ header {
 /* This adds max-width to popup content */
 .custom-popup-class .mfp-content {
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
 }
 
 /* This makes "#popup-with-something" scale down proportionally */
@@ -111,7 +111,6 @@ header {
 }
 /* This is an element itself */
 .some-element {
-  background: #EBE8E8;
   position: absolute;
   top: -3px;
   left: 0;
