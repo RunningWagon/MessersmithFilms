@@ -35,7 +35,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top">
@@ -130,19 +129,14 @@
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                    <a href="#popup-with-something" class="open-popup-link">
                         <img src="img/portfolio/fullsize/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
                     </a>
+                    <div id="popup-with-something" class="mfp-hide">
+                        <video src="img/video.mp4" autoplay loop>
+                            <img src="img/city.jpg"></img>
+                        </video>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
@@ -398,7 +392,18 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
-
+    
+    <script>
+    $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true,
+        mainClass: 'custom-popup-class'
+        // Optionally pass markup without attaching it to DOM
+        /*items: {
+            src: '<div id="popup-with-something" class="mfp-hide"><div class="some-element">Instead of this element you may put anything else and it\'ll scale proportionally (e.g. flash embed object or your custom video player) </div></div>' 
+        }*/
+    })
+    </script>
 </body>
 
 </html>
