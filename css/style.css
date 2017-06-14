@@ -85,15 +85,14 @@ hr {
     opacity: 0;
     position: absolute;
     top: 45%;
-    left: 35%;
+    left: 40%;
     height: 5%;
-    width: 30%
+    width: 20%
 }
 
 .imageHover  {
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
     width: 100%;
-    position: relative; /* If you want text inside of it */
+    position: relative;
     background-size: cover;
     padding-top: 55%;
     background-repeat: no-repeat;
