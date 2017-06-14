@@ -90,11 +90,9 @@ header {
 
 .middle {
     pointer-events: none;
-    transition: 1s ease;
     opacity: 0;
     position: absolute;
     transform: translate(225%, -350%);
-    -ms-transform: translate(-50%, -50%)
 }
 
 .open-popup-link:hover .imageHover {
