@@ -66,14 +66,6 @@ hr {
     max-width: 100%; 
 }
 
-.portrait-image {
-    width: 90%;
-}
-
-/* Portfolio Section */
-.popup-gallery img {
-    width: 100% !important;
-}
 
 /* Footer */
 #footer {
@@ -88,9 +80,58 @@ hr {
 
 
 /* Portfolio */
+.middle {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    height: 5%;
+    width: 30%
+}
 
-.portfolio-box img {
-    height: 100%;
+.imageHover  {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    width: 100%;
+    position: relative; /* If you want text inside of it */
+    background-size: cover;
+    padding-top: 55%;
+    background-repeat: no-repeat;
+}
+
+ #portfolio1 {
+     background-image:  url('../img/portfolio/fullsize/1.jpg');
+ }
+ #portfolio2 {
+     background-image:  url('../img/portfolio/fullsize/2.jpg');
+ }
+ #portfolio3 {
+     background-image:  url('../img/portfolio/fullsize/3.jpg');
+ }
+ #portfolio4 {
+     background-image:  url('../img/portfolio/fullsize/4.jpg');
+ }
+ #portfolio5 {
+     background-image:  url('../img/portfolio/fullsize/5.jpg');
+ }
+ #portfolio6 {
+     background-image:  url('../img/portfolio/fullsize/6.jpg');
+ }
+
+.open-popup-link:hover .imageHover {
+    opacity: 0.6;
+}
+
+.open-popup-link:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #FF0000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px; 
+  border-radius: 10px;
 }
 
 /* About2 */
@@ -123,3 +164,4 @@ hr {
     color: white;
     z-index: 10;
 }
+
