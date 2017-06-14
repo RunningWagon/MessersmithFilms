@@ -60,11 +60,6 @@ header {
     width: 90%;
 }
 
-/* Portfolio Section */
-.popup-gallery img {
-    width: 100% !important;
-}
-
 /* Footer */
 #footer {
     background-color: #FFFFFF;
@@ -78,45 +73,43 @@ header {
 
 
 /* Portfolio */
-
-.portfolio-box img {
-    height: 100%;
+.popup-gallery img {
+    width: 100% !important;
+}
+.open-popup-link {
+    position: relative;
+    width: 50%;
 }
 
-/* This adds padding from top and bottom */
-.custom-popup-class .mfp-container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-/* This adds max-width to popup content */
-.custom-popup-class .mfp-content {
+.imageHover {
+  opacity: 1;
+  display: block;
   width: 100%;
-  max-width: 1000px;
+  height: auto;
 }
 
-/* This makes "#popup-with-something" scale down proportionally */
-#popup-with-something {
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  /* This is scale ratio */
-  padding-top: 56.25%;
+.middle {
+    pointer-events: none;
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(225%, -350%);
+    -ms-transform: translate(-50%, -50%)
 }
-/* This shifts close button outside of the container */
-#popup-with-something .mfp-close {
-  top: -44px;
-  color: #FFF;
-  text-align: right;
-  right: 1px;
+
+.open-popup-link:hover .imageHover {
+    opacity: 0.6;
 }
-/* This is an element itself */
-.some-element {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+
+.open-popup-link:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #FF0000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 /* About2 */
@@ -138,7 +131,7 @@ header {
 
 /* Contact */ 
 .contact-outer {
-    background-image: url(../img/guitar.jpg);
+    background-image: url(../img/Tampa.jpg);
     background-attachment: fixed;
     background-position: center; 
     background-size: cover;
