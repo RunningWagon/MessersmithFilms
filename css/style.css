@@ -99,22 +99,22 @@ hr {
 }
 
  #portfolio1 {
-     background-image:  url('../img/portfolio/fullsize/1.jpg');
+     background-image:  url('../img/portfolio/1.jpg');
  }
  #portfolio2 {
-     background-image:  url('../img/portfolio/fullsize/2.jpg');
+     background-image:  url('../img/portfolio/2.jpg');
  }
  #portfolio3 {
-     background-image:  url('../img/portfolio/fullsize/3.jpg');
+     background-image:  url('../img/portfolio/3.jpg');
  }
  #portfolio4 {
-     background-image:  url('../img/portfolio/fullsize/4.jpg');
+     background-image:  url('../img/portfolio/4.jpg');
  }
  #portfolio5 {
-     background-image:  url('../img/portfolio/fullsize/5.jpg');
+     background-image:  url('../img/portfolio/5.jpg');
  }
  #portfolio6 {
-     background-image:  url('../img/portfolio/fullsize/6.jpg');
+     background-image:  url('../img/portfolio/6.jpg');
  }
 
 .open-popup-link:hover .imageHover {

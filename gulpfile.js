@@ -29,7 +29,14 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/creative.css')
+    gulp.src('css/creative.css')
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+    return gulp.src('css/style.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
