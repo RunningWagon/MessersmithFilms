@@ -131,11 +131,11 @@ hr {
      background-image:  url('../img/portfolio/6.jpg');
  }
 
-.open-popup-link:hover .imageHover {
+.imgContainer:hover .imageHover {
     opacity: 0.8;
 }
 
-.open-popup-link:hover .middle {
+.imgContainer:hover .middle {
   opacity: 1;
 }
 
