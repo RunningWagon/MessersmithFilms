@@ -84,10 +84,11 @@ hr {
     pointer-events: none;
     opacity: 0;
     position: absolute;
-    top: 45%;
-    left: 40%;
-    height: 10%;
-    width: 20%
+    top: 37%;
+    left: 20%;
+    height: 26%;
+    width: 60%;
+    font-size: 1.7em;
 }
 
 .imgContainer {
@@ -132,20 +133,11 @@ hr {
  }
 
 .imgContainer:hover .imageHover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .imgContainer:hover .middle {
   opacity: 1;
-}
-
-.text {
-  background-color: #1ab7ea;
-  color: white;
-  font-size: 16px;
-  border-radius: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 /* About2 */
