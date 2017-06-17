@@ -8,7 +8,7 @@
     });
     $('#portfolio2').magnificPopup({
         items: {
-            src: 'https://vimeo.com/220556952/2302def608',
+            src: 'https://vimeo.com/220556952',
             type: 'iframe' // this overrides default type
         },
         type: 'image' // this is default type
