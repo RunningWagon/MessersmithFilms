@@ -158,6 +158,11 @@ hr {
         top: 20%;
     }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+    .middle {
+        top: 20%;
+    }
+}
 
  #portfolio1 {
      background-image:  url('../img/portfolio/1.jpg');
