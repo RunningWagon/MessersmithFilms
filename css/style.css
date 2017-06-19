@@ -98,9 +98,6 @@ hr {
     /* The following will size the video to fit the full container. Not necessary, just nice.*/
     min-width: 100%;
     min-height: 100%;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     z-index: -100;
 }
@@ -117,26 +114,15 @@ hr {
 
 
 /* Portfolio */
-.middle {
-    pointer-events: none;
-    opacity: 0;
-    position: absolute;
-    top: 37%;
-    left: 20%;
-    height: 26%;
-    width: 60%;
-    font-size: 1.7em;
-}
 
 .imgContainer {
-    width: 100%;
-    height: 100%;
     overflow:hidden;
 }
 
 .imageHover  {
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
     padding-top: 50%;
-    width: 100%;
     height: 100%;
     position: relative;
     background-size: cover;
@@ -147,7 +133,17 @@ hr {
 .imgContainer:hover .imageHover,
 .imgContainer:focus .imageHover {
     transform: scale(1.1);
-    transition: all .5s;
+    transition: all .5s
+}
+.middle {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    top: 37%;
+    left: 20%;
+    height: 26%;
+    width: 60%;
+    font-size: 1.7em;
 }
 
  #portfolio1 {
