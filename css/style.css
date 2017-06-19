@@ -114,9 +114,22 @@ hr {
 
 
 /* Portfolio */
-
 .imgContainer {
     overflow:hidden;
+}
+
+.imgContainer:hover .imageHover {
+    opacity: 0.6;
+}
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.imgContainer:hover .imageHover,
+.imgContainer:focus .imageHover {
+    transform: scale(1.1);
+    transition: all .5s
 }
 
 .imageHover  {
@@ -129,17 +142,11 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.imgContainer:hover .imageHover,
-.imgContainer:focus .imageHover {
-    transform: scale(1.1);
-    transition: all .5s
-}
 .middle {
     pointer-events: none;
     opacity: 0;
     position: absolute;
-    top: 37%;
+    top: 34%;
     left: 20%;
     height: 26%;
     width: 60%;
@@ -165,14 +172,10 @@ hr {
      background-image:  url('../img/portfolio/6.jpg');
  }
 
-.imgContainer:hover .imageHover {
-    opacity: 0.6;
+.text-faded {
+  color: #333 !important;
+  line-height: 3em;
 }
-
-.imgContainer:hover .middle {
-  opacity: 1;
-}
-
 /* Testimonials */
 .textReview{
     padding-top: 10%;
