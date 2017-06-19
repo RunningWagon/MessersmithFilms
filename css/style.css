@@ -153,6 +153,12 @@ hr {
     font-size: 1.7em;
 }
 
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .middle {
+        top: 20%;
+    }
+}
+
  #portfolio1 {
      background-image:  url('../img/portfolio/1.jpg');
  }
