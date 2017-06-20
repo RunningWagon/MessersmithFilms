@@ -4,6 +4,10 @@ body, html{
     font-family:'lato';
 }
 
+#pageHeading {
+    font-size: 16px;
+}
+
 /* About */ 
 .textAbout{
     margin-left: 11%;
