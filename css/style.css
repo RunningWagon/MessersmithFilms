@@ -92,8 +92,6 @@ hr {
     top: 0;
     min-width: 100%; 
     min-height: 100%;
-    width: 100%; 
-    height: 100%;
 }
 
 #header {
@@ -123,6 +121,11 @@ hr {
     max-width: 100%; 
 }
 
+@media (max-width: 768px) {
+    .header-content { 
+        top: 27.5%;
+    }
+}
 
 /* Portfolio */
 .imgContainer {
